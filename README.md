@@ -4,4 +4,5 @@ We can check all the parenthesis in any expression and review if any open parent
 
 ### Example use
 
-<img width="785" alt="checker" src="https://user-images.githubusercontent.com/42686771/120876241-48e8e480-c575-11eb-9514-c85d8e4855d8.png">
+<img width="563" alt="brackets" src="https://user-images.githubusercontent.com/42686771/120931432-1d6e1300-c6b7-11eb-9620-4bd2cf849015.png">
+
