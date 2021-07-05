@@ -23,10 +23,7 @@ const bracketsChecker = (entry) => {
     [...entry || ''].filter((letter) => {
       return Object.entries(braces).some((brace) => brace.includes(letter))
     }).forEach((brace) => {
-      //open braces
-      const open = Object.keys(braces)
-      
-      if (open.includes(brace)) {
+      if (braces[brace]) {
         stack.push(brace)
       } else if (braces[stack[stack.length - 1]] === brace) {
         stack.pop(brace)
