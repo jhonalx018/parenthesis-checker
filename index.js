@@ -20,9 +20,7 @@ const bracketsChecker = (entry) => {
   
     const stack = [];
   
-    [...entry || ''].filter((letter) => {
-      return Object.entries(braces).some((brace) => brace.includes(letter))
-    }).forEach((brace) => {
+    [...entry || ''].forEach((brace) => {
       if (braces[brace]) {
         stack.push(brace)
       } else if (braces[stack[stack.length - 1]] === brace) {
@@ -36,3 +34,5 @@ const bracketsChecker = (entry) => {
   console.clear()
   bracketsChecker('{[(])}') //bad
   bracketsChecker('{[{}]}') //god
+  bracketsChecker('(())') //god
+  bracketsChecker('(()]') //bad
